@@ -1,11 +1,12 @@
 USE InterviewDB;
 
-IF OBJECT_ID('dbo.Users', 'U') IS NOT NULL 
-  DROP TABLE dbo.Users;
+IF OBJECT_ID('Users', 'U') IS NOT NULL 
+  DROP TABLE Users;
 
-CREATE TABLE dbo.Users (
+CREATE TABLE Users (
     id INT PRIMARY KEY IDENTITY(1,1),
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     created_at DATETIME DEFAULT GETDATE()
 );
+
