@@ -1,29 +1,29 @@
 (c) Microsoft Corporation. All rights reserved.
 
-C:\Users\Tushar>cd C:\Users\Tushar\project\node-mssql-crud
+C:\Users\Tanuja>cd C:\Users\Tanuja\project\node-mssql-crud
 
-C:\Users\Tushar\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Tanuja\",\"email\":\"tanuja@example.com\"}"
+C:\Users\Tanuja\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Tanuja\",\"email\":\"tanuja@example.com\"}"
 {"message":"User created successfully"}
-C:\Users\Tushar\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Priya\",\"email\":\"priya@example.com\"}"
+C:\Users\Tanuja\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Priya\",\"email\":\"priya@example.com\"}"
 {"message":"User created successfully"}
-C:\Users\Tushar\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Ananya\",\"email\":\"ananya@example.com\"}"
+C:\Users\Tanuja\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Ananya\",\"email\":\"ananya@example.com\"}"
 {"message":"User created successfully"}
-C:\Users\Tushar\project\node-mssql-crud>curl http://localhost:3000/api/users
+C:\Users\Tanuja\project\node-mssql-crud>curl http://localhost:3000/api/users
 [{"id":1,"name":"Tanuja Updated","email":"tanuja.updated@example.com","created_at":"2025-12-27T01:15:13.550Z"},{"id":3,"name":"Rama","email":"rama@gmail.com","created_at":"2025-12-27T01:16:13.477Z"},{"id":4,"name":"Tanuja","email":"tanuja@example.com","created_at":"2025-12-27T01:31:12.847Z"},{"id":5,"name":"Priya","email":"priya@example.com","created_at":"2025-12-27T01:31:21.363Z"},{"id":6,"name":"Ananya","email":"ananya@example.com","created_at":"2025-12-27T01:31:30.443Z"}]
-C:\Users\Tushar\project\node-mssql-crud>curl http://localhost:3000/api/users/1
+C:\Users\Tanuja\project\node-mssql-crud>curl http://localhost:3000/api/users/1
 {"id":1,"name":"Tanuja Updated","email":"tanuja.updated@example.com","created_at":"2025-12-27T01:15:13.550Z"}
-C:\Users\Tushar\project\node-mssql-crud>curl -X PUT http://localhost:3000/api/users/1 -H "Content-Type: application/json" -d "{\"name\":\"Tanuja Sharma\",\"email\":\"tanuja.sharma@example.com\"}"
+C:\Users\Tanuja\project\node-mssql-crud>curl -X PUT http://localhost:3000/api/users/1 -H "Content-Type: application/json" -d "{\"name\":\"Tanuja Sharma\",\"email\":\"tanuja.sharma@example.com\"}"
 {"message":"User updated successfully"}
-C:\Users\Tushar\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Kavya\",\"email\":\"invalidemail\"}"
+C:\Users\Tanuja\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Kavya\",\"email\":\"invalidemail\"}"
 {"message":"Invalid email format"}
-C:\Users\Tushar\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Diya\"}"
+C:\Users\Tanuja\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Diya\"}"
 {"message":"Name and email are required"}
-C:\Users\Tushar\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Sneha\",\"email\":\"tanuja@example.com\"}"
+C:\Users\Tanuja\project\node-mssql-crud>curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d "{\"name\":\"Sneha\",\"email\":\"tanuja@example.com\"}"
 {"message":"Email already exists"}
-C:\Users\Tushar\project\node-mssql-crud>curl http://localhost:3000/api/users/999
+C:\Users\Tanuja\project\node-mssql-crud>curl http://localhost:3000/api/users/999
 {"message":"User not found"}
-C:\Users\Tushar\project\node-mssql-crud>curl -X DELETE http://localhost:3000/api/users/2
+C:\Users\Tanuja\project\node-mssql-crud>curl -X DELETE http://localhost:3000/api/users/2
 {"message":"User deleted successfully"}
-C:\Users\Tushar\project\node-mssql-crud>curl http://localhost:3000/api/users
+C:\Users\Tanuja\project\node-mssql-crud>curl http://localhost:3000/api/users
 [{"id":1,"name":"Tanuja Sharma","email":"tanuja.sharma@example.com","created_at":"2025-12-27T01:15:13.550Z"},{"id":3,"name":"Rama","email":"rama@gmail.com","created_at":"2025-12-27T01:16:13.477Z"},{"id":4,"name":"Tanuja","email":"tanuja@example.com","created_at":"2025-12-27T01:31:12.847Z"},{"id":5,"name":"Priya","email":"priya@example.com","created_at":"2025-12-27T01:31:21.363Z"},{"id":6,"name":"Ananya","email":"ananya@example.com","created_at":"2025-12-27T01:31:30.443Z"}]
-C:\Users\Tushar\project\node-mssql-crud>
+C:\Users\Tanuja\project\node-mssql-crud>
